@@ -23,18 +23,18 @@ public class OI {
    Joystick stick = new Joystick(1);
    Joystick chain = new Joystick(2);
    Button aButton = new JoystickButton(stick, 1);
-   Button rightButton5 = new JoystickButton(stick, 5);
-   Button rightButton6 = new JoystickButton(stick, 6);
    Button rightButton2 = new JoystickButton(stick,2);
    Button rightButton3 = new JoystickButton(stick,3);
    Button rightButton4 = new JoystickButton(stick,4);
    Button leftButton8 = new JoystickButton(chain,8);
+   Button leftButton5 = new JoystickButton(chain, 5);
+   Button leftButton6 = new JoystickButton(chain, 6);
   
    
    public OI(){
     aButton.whenPressed(new DriveWithController());
-    rightButton5.whenPressed(new ArmRetract());
-    rightButton6.whenPressed(new ArmExtend());
+    leftButton5.whenPressed(new ArmRetract());
+    leftButton6.whenPressed(new ArmExtend());
     rightButton2.whenPressed(new IntakeOff());
     rightButton3.whenPressed(new IntakeReverse());
     rightButton4.whenPressed(new IntakeFoward());
